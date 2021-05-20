@@ -1,0 +1,21 @@
+## import the libraries
+
+import pyqrcode
+import png
+from pyqrcode import QRCode
+
+## for youtube---
+y = 'www.youtube.com'  ## initialized a variable for storing website
+
+url_y = pyqrcode.create(y)  ## a function to generate QR code
+
+url_y.svg('youtube_svg.svg', scale=6)  ## save as svg fie
+url_y.png('youtube_svg.png', scale=6)  ## save as png file
+
+## for google
+g = 'www.google.com'
+
+url_g = pyqrcode.create(g)
+
+url_g.svg('google_svg.svg', scale=6)
+url_g.png('google_png.png', scale=6)
